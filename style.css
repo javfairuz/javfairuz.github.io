@@ -22,8 +22,20 @@ body{
 .link {
     border: 5px solid white;
     background-color: rgb(6, 6, 80) ;
-    width: 250px;
+    max-width: 250px;
     padding: 15px;
     margin: 20px auto;
+}
+
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 18px;
+    }
+
+    h2{
+        font-size: 12px;
+    }
+
+    .container { width: 400px;}
 }
 
