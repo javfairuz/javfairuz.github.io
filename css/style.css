@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+    background-color: rgb(6, 6, 80);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.container{
+    width: 800px;
+    border: 5px solid white;
+    margin: 50px auto;
+    padding: 25px;
+
+}
+
+.link a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.link {
+    border: 5px solid white;
+    background-color: rgb(6, 6, 80) ;
+    width: 250px;
+    padding: 15px;
+    margin: 20px auto;
+}
+
