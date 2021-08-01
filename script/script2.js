@@ -1,15 +1,15 @@
 
 function guessNumber(){
-    alert ('you have 3 chance')
+    alert ('Kamu Punya 3 kesempatan')
     var AI = [Math.floor(Math.random() * 10) + 1];
         // debuging console
 console.log(AI)
         // tebakan player
 
     var p;
-    p = prompt('choose number between 1-10');
+    p = prompt('Pilih lah salah satu angka dari  1-10');
  
-        for(i=0; i<2 ; i++){
+        for(i=0; i<3 ; i++){
             if (p == AI ){
                 alert(p + ' BENAR!!!')
                 alert('kau hebat')
