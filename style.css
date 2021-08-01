@@ -27,7 +27,7 @@ body{
     margin: 20px auto;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width:600px){
     h1{
         font-size: 18px;
     }
@@ -36,6 +36,6 @@ body{
         font-size: 12px;
     }
 
-    .container { width: 400px;}
+    .container { max-width: 400px;}
 }
 
