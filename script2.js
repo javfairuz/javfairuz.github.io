@@ -18,7 +18,7 @@ console.log(AI)
             }else if (p >AI) {
               p =  prompt(p + ' terlalu rendah \n coba lagi');
             }else if( p < AI ){
-                p = prompt(p + ' terlalu rendah \n coba lagi');
+                p = prompt(p + ' terlalu tinggi \n coba lagi');
             }else {
                 alert('Error!')
                 p = prompt('Error!! \n coba lagi');
