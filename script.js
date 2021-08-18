@@ -1,0 +1,78 @@
+// pilihan jarvis
+
+function getPilihanJarvis() {
+
+    const comp = Math.random();
+    if (comp < 0.34) return 'gunting';
+    if (comp >= 0.34 && comp < 0.67) return 'batu';
+    return 'kertas';
+};
+
+
+
+function getHasil(comp, player) {
+    if (player == comp) return ' SERI!';
+    if (player == 'batu') return (comp == 'gunting') ? ' MENANG!' : ' KALAH!';
+    if (player == 'gunting') return (comp == 'kertas') ? ' MENANG!' : ' KALAH!';
+    if (player == 'kertas') return (comp == 'batu') ? ' MENANG!' : ' KALAH!';
+};
+
+
+
+
+
+ function putar() {
+     const imgComputer = document.querySelector('.img-computer');
+     const gambar = ['batu','gunting','kertas'];
+     let i=0;
+     const start = new Date().getTime();
+     setInterval(function(){
+         if(new Date().getTime() - start > 1000){
+         clearInterval;
+         return;
+         }
+         imgComputer.setAttribute('src','img/' + gambar[i ++] + '.jpg')
+         if( i == gambar.length)i=0;
+     },100);
+ };
+
+
+
+const papanScore = document.querySelector('.scoring p');
+let score = 0;
+function win(){
+    score++;
+    papanScore.innerHTML = 'SCORE:'  + score;
+}
+
+
+const pilihanUser = document.querySelectorAll('li img');
+pilihanUser.forEach(function(user) {
+    user.addEventListener('click', function(){
+        const pilihanComputer = getPilihanJarvis();
+        const pilihanPlayer = user.className;
+        const hasil = getHasil(pilihanComputer, pilihanPlayer);
+
+       
+        
+        putar();
+
+        setTimeout(function(){
+        const imgComputer = document.querySelector('.img-computer');
+        imgComputer.setAttribute('src','img/' + pilihanComputer+'.jpg');
+        const info = document.querySelector('.info');
+        info.innerHTML = hasil;
+        if(hasil == ' MENANG!'){
+            win()
+        }
+        
+        
+
+        }, 1000);
+
+       
+    });
+});
+
+
+
