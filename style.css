@@ -41,6 +41,12 @@ h1 {
     margin:  auto;
     position: relative;
 }
+.header{
+    width: 600px;
+    padding: 20px;
+    margin:  auto;
+    position: relative;   
+}
 
 .area-computer{
     margin: 5px auto;
