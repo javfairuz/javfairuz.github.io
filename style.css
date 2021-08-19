@@ -116,7 +116,21 @@ img{
 
 .area-player li{
     margin: 0px 18px;
+}span.satu{margin-left: 38px;}
+span.dua{margin-left: 28px;}
+span.tiga{margin-left: 26px;}
+span{
+    padding: 3px;
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
 }
+
 
 .batu, .gunting, .kertas {
     position: relative;
